@@ -41,7 +41,8 @@
             bindings
                 = <&kp LS(LC(LA(BSLH)))>
                 // , <&kp LA(LSHIFT)>
-                , <&kp LG(LA(F2))>
+                // , <&kp LG(LA(F2))>
+                , <&kp LS(LC(LA(LEFT_BRACKET)))> // {
                 ;
         };
         language_macro_ru: language_macro_ru {
@@ -52,7 +53,8 @@
             bindings
                 = <&kp LS(LC(LA(MINUS)))>
                 // , <&kp LA(LSHIFT)>
-                , <&kp LG(LA(F3))>
+                // , <&kp LG(LA(F3))>
+                , <&kp LS(LC(LA(RIGHT_BRACKET)))> // }
                 ;
         };
     };
