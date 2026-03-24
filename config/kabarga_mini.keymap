@@ -146,14 +146,14 @@
         tri_layer {
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
-        //│ RESET    │          │          │          │          │   │          │          │          │          │  RESET   │
-           &sys_reset  &trans     &trans     &trans    &trans          &trans     &trans     &trans     &trans    &sys_reset
+        //│          │          │          │          │          │   │          │          │          │          │  RESET   │
+           &kp Q      &kp W      &kp E      &kp R      &kp T        &out OUT_BLE &out OUT_USB &out OUT_TOG &none   &sys_reset
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│PROFILE 0 │PROFILE 1 │PROFILE 2 │PROFILE 3 │PROFILE 4 │   │          │          │          │          │          │
     &bt BT_SEL 0  &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4 &trans     &trans     &trans     &trans    &trans
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│BOOTLOADER│          │          │          │ CLEAR BT │   │          │          │          │          │BOOTLOADER│
-          &bootloader  &trans     &trans    &trans     &bt BT_CLR      &check_bat    &trans     &trans     &trans    &bootloader
+        //│          │          │          │          │ CLEAR BT │   │          │          │          │          │BOOTLOADER│
+            &none      &trans     &trans    &trans     &bt BT_CLR      &check_bat    &trans     &trans     &trans    &bootloader
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
                                   &none      &trans     &trans         &trans     &trans      &none
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
