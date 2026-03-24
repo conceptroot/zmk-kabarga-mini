@@ -63,13 +63,13 @@
         #include "combos.dtsi"
     };
 
-    conditional_layers {
-        compatible = "zmk,conditional-layers";
-        tri_layer {
-            if-layers = <RIGHT1 LEFT1>;
-            then-layer = <TRI>;
-        };
-    };
+    // conditional_layers {
+    //     compatible = "zmk,conditional-layers";
+    //     tri_layer {
+    //         if-layers = <RIGHT1 LEFT1>;
+    //         then-layer = <TRI>;
+    //     };
+    // };
 
     keymap {
         compatible = "zmk,keymap";
@@ -77,7 +77,7 @@
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮        ╭──────────┬──────────┬──────────┬──────────┬──────────╮
         //│  Q       │  W       │  E       │  R       │  T       │        │  Y       │  U       │  I       │  O       │  P       │
-            &kp Q      &kp W      &kp E      &kp R      &kp T               &kp Y      &kp U      &kp I      &kp O     &check_bat 
+            &kp Q      &kp W      &kp E      &kp R      &kp T               &kp Y      &kp U      &kp I      &kp O      &kp P
         //├──────────┼──────────┼──────────┼──────────┼──────────┤        ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│  A       │  S       │  D       │  F       │  G       │        │  H       │  J       │  K       │  L       │ ; :      │
             &kp A      &kp S      &kp D      &kp F      &kp G               &kp H      &kp J      &kp K      &kp L     &kp SEMI
@@ -102,7 +102,7 @@
         //│ `        │ |        │ _        │  =       │  [       │   │    ]     │  '       │  "       │  XXXXXX  │    \     │
             &kp GRAVE  &kp PIPE   &kp UNDER  &kp EQUAL  &kp LBKT       &kp RBKT   &kp SQT    &kp DQT    &none       &kp BSLH
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                                  &trans     &kp TAB    &none          &trans     &trans    &none
+                                  &mo TRI     &kp TAB    &none          &trans     &trans    &none
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
             >;
         };
@@ -121,7 +121,7 @@
         //│  XXXXXX  │  Delete  │Backspace │ ENTER    │ TAB      │   │  XXXXXX  |  1       │  2       │  3       │ XXXXXX   │
             &none       &kp BSPC  &kp DEL   &kp ENTER  &kp TAB          &none     &kp N1     &kp N2     &kp N3      &none
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                                  &none      &trans     &trans         &trans     &trans     &none
+                                  &none      &trans     &trans         &trans     &trans     &mo TRI
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
             >;
         };
@@ -147,10 +147,10 @@
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
         //│          │          │          │          │          │   │          │          │          │          │  RESET   │
-           &kp Q      &kp W      &kp E      &kp R      &kp T        &out OUT_BLE &out OUT_USB &out OUT_TOG &none   &sys_reset
+           &none       &none      &none      &none      &none       &out OUT_BLE &out OUT_USB &out OUT_TOG &none  &sys_reset
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│PROFILE 0 │PROFILE 1 │PROFILE 2 │PROFILE 3 │PROFILE 4 │   │          │          │          │          │          │
-    &bt BT_SEL 0  &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4 &trans     &trans     &trans     &trans    &trans
+        //│PROFILE 0 │PROFILE 1 │PROFILE 2 │          │          │   │          │          │          │          │          │
+    &bt BT_SEL 0  &bt BT_SEL 1 &bt BT_SEL 2  &none      &none           &trans     &trans     &trans     &trans    &trans
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│          │          │          │          │ CLEAR BT │   │          │          │          │          │BOOTLOADER│
             &none      &trans     &trans    &trans     &bt BT_CLR      &check_bat    &trans     &trans     &trans    &bootloader
