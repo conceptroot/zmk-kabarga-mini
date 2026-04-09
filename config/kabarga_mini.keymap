@@ -40,9 +40,9 @@
             tap-ms = <5>;
             bindings
                 = <&kp LS(LC(LA(BSLH)))>
-                // , <&kp LA(LSHIFT)>
+                , <&kp LA(LSHIFT)>
                 // , <&kp LG(LA(F2))>
-                , <&kp LS(LC(LA(LEFT_BRACKET)))> // {
+                // , <&kp LS(LC(LA(LEFT_BRACKET)))> // {
                 ;
         };
         language_macro_ru: language_macro_ru {
@@ -52,9 +52,9 @@
             tap-ms = <5>;
             bindings
                 = <&kp LS(LC(LA(MINUS)))>
-                // , <&kp LA(LSHIFT)>
+                , <&kp LA(LSHIFT)>
                 // , <&kp LG(LA(F3))>
-                , <&kp LS(LC(LA(RIGHT_BRACKET)))> // }
+                // , <&kp LS(LC(LA(RIGHT_BRACKET)))> // }
                 ;
         };
     };
@@ -62,14 +62,6 @@
     combos {
         #include "combos.dtsi"
     };
-
-    // conditional_layers {
-    //     compatible = "zmk,conditional-layers";
-    //     tri_layer {
-    //         if-layers = <RIGHT1 LEFT1>;
-    //         then-layer = <TRI>;
-    //     };
-    // };
 
     keymap {
         compatible = "zmk,keymap";
