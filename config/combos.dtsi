@@ -20,7 +20,7 @@ combo_lang_en { timeout-ms = <50>; key-positions = <22 23>; bindings = <&languag
 combo_lang_ru { timeout-ms = <50>; key-positions = <26 27>; bindings = <&language_macro_ru>; };
 
 // Mac Os navigation
-combo_ctrl_up { timeout-ms = <35>; key-positions = <1 2 3 4>; bindings = <&kp LC(LG(LA(UP)))>; };
+combo_ctrl_up { timeout-ms = <35>; key-positions = <0 1 2 3>; bindings = <&kp LC(LG(LA(UP)))>; };
 combo_ctrl_left { timeout-ms = <50>; key-positions = <1 2>; bindings = <&kp LC(LG(LA(LEFT)))>; };
 combo_ctrl_right { timeout-ms = <50>; key-positions = <2 3>; bindings = <&kp LC(LG(LA(RIGHT)))>; };
 
