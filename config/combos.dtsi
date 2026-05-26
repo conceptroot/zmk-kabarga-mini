@@ -14,11 +14,11 @@ compatible = "zmk,combos";
 combo_shift_left { timeout-ms = <25>; key-positions = <11 13>; bindings = <&kp LSHIFT>; layers = <DEFAULT>; };
 combo_shift_right { timeout-ms = <25>; key-positions = <16 18>; bindings = <&kp RSHIFT>; layers = <DEFAULT>; };
 // Alt
-combo_shift_left { timeout-ms = <25>; key-positions = <11 12>; bindings = <&kp LALT>; layers = <DEFAULT>; };
-combo_shift_right { timeout-ms = <25>; key-positions = <17 18>; bindings = <&kp LALT>; layers = <DEFAULT>; };
+combo_alt_left { timeout-ms = <25>; key-positions = <11 12>; bindings = <&kp LALT>; layers = <DEFAULT>; };
+combo_alt_right { timeout-ms = <25>; key-positions = <17 18>; bindings = <&kp LALT>; layers = <DEFAULT>; };
 // Alt+Shift
-combo_shift_left { timeout-ms = <25>; key-positions = <11 12 13>; bindings = <&kp LS(LALT)>; layers = <DEFAULT>; };
-combo_shift_right { timeout-ms = <25>; key-positions = <16 17 18>; bindings = <&kp LS(LALT)>; layers = <DEFAULT>; };
+combo_alt_shift_left { timeout-ms = <25>; key-positions = <11 12 13>; bindings = <&kp LS(LALT)>; layers = <DEFAULT>; };
+combo_alt_shift_right { timeout-ms = <25>; key-positions = <16 17 18>; bindings = <&kp LS(LALT)>; layers = <DEFAULT>; };
 
 // Copy paste
 combo_cmd_c { timeout-ms = <50>; key-positions = <21 22 23>; bindings = <&kp LG(C)>; };
