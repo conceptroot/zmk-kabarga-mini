@@ -19,6 +19,17 @@ combo_alt_right { timeout-ms = <25>; key-positions = <17 18>; bindings = <&kp LA
 // Alt+Shift
 combo_alt_shift_left { timeout-ms = <25>; key-positions = <11 12 13>; bindings = <&kp LS(LALT)>; layers = <DEFAULT>; };
 combo_alt_shift_right { timeout-ms = <25>; key-positions = <16 17 18>; bindings = <&kp LS(LALT)>; layers = <DEFAULT>; };
+// Command
+combo_cmd_left { timeout-ms = <25>; key-positions = <12 13>; bindings = <&kp LGUI>; layers = <DEFAULT>; };
+combo_cmd_right { timeout-ms = <25>; key-positions = <16 17>; bindings = <&kp LGUI>; layers = <DEFAULT>; };
+
+// Control
+combo_ctrl_left { timeout-ms = <25>; key-positions = <1 2>; bindings = <&kp LCTRL>; layers = <DEFAULT>; };
+combo_ctrl_right { timeout-ms = <25>; key-positions = <7 8>; bindings = <&kp LCTRL>; layers = <DEFAULT>; };
+combo_ctrl_left2 { timeout-ms = <35>; key-positions = <10 12>; bindings = <&kp LCTRL>; layers = <DEFAULT>; };
+combo_ctrl_right2 { timeout-ms = <35>; key-positions = <17 19>; bindings = <&kp LCTRL>; layers = <DEFAULT>; };
+combo_ctrl_left3 { timeout-ms = <25>; key-positions = <11 22>; bindings = <&kp LCTRL>; layers = <DEFAULT>; };
+combo_ctrl_right3 { timeout-ms = <25>; key-positions = <18 27>; bindings = <&kp LCTRL>; layers = <DEFAULT>; };
 
 // Copy paste
 combo_cmd_c { timeout-ms = <50>; key-positions = <21 22 23>; bindings = <&kp LG(C)>; };
@@ -31,8 +42,8 @@ combo_lang_ru { timeout-ms = <50>; key-positions = <26 27>; bindings = <&languag
 
 // Mac Os navigation
 combo_ctrl_up { timeout-ms = <35>; key-positions = <0 1 2 3>; bindings = <&kp LC(LG(LA(UP)))>; };
-combo_ctrl_left { timeout-ms = <50>; key-positions = <1 2>; bindings = <&kp LC(LG(LA(LEFT)))>; };
-combo_ctrl_right { timeout-ms = <50>; key-positions = <2 3>; bindings = <&kp LC(LG(LA(RIGHT)))>; };
+// combo_ctrl_left { timeout-ms = <50>; key-positions = <1 2>; bindings = <&kp LC(LG(LA(LEFT)))>; };
+// combo_ctrl_right { timeout-ms = <50>; key-positions = <2 3>; bindings = <&kp LC(LG(LA(RIGHT)))>; };
 
 // Handy push to talk
 combo_handy { timeout-ms = <40>; key-positions = <1 2 3>; bindings = <&kp LC(LG(LA(DOWN)))>; };
