@@ -24,10 +24,10 @@ combo_cmd_left { timeout-ms = <25>; key-positions = <12 13>; bindings = <&kp LGU
 combo_cmd_right { timeout-ms = <25>; key-positions = <16 17>; bindings = <&kp LGUI>; layers = <DEFAULT>; };
 
 // Control
-combo_ctrl_left { timeout-ms = <25>; key-positions = <1 2>; bindings = <&kp LCTRL>; layers = <DEFAULT>; };
-combo_ctrl_right { timeout-ms = <25>; key-positions = <7 8>; bindings = <&kp LCTRL>; layers = <DEFAULT>; };
-combo_ctrl_left2 { timeout-ms = <35>; key-positions = <10 12>; bindings = <&kp LCTRL>; layers = <DEFAULT>; };
-combo_ctrl_right2 { timeout-ms = <35>; key-positions = <17 19>; bindings = <&kp LCTRL>; layers = <DEFAULT>; };
+// combo_ctrl_left { timeout-ms = <25>; key-positions = <1 2>; bindings = <&kp LCTRL>; layers = <DEFAULT>; };
+// combo_ctrl_right { timeout-ms = <25>; key-positions = <7 8>; bindings = <&kp LCTRL>; layers = <DEFAULT>; };
+//combo_ctrl_left2 { timeout-ms = <35>; key-positions = <10 12>; bindings = <&kp LCTRL>; layers = <DEFAULT>; };
+//combo_ctrl_right2 { timeout-ms = <35>; key-positions = <17 19>; bindings = <&kp LCTRL>; layers = <DEFAULT>; };
 combo_ctrl_left3 { timeout-ms = <25>; key-positions = <11 22>; bindings = <&kp LCTRL>; layers = <DEFAULT>; };
 combo_ctrl_right3 { timeout-ms = <25>; key-positions = <18 27>; bindings = <&kp LCTRL>; layers = <DEFAULT>; };
 
